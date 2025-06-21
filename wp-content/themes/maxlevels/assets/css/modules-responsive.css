@@ -1,0 +1,2182 @@
+/*------------------------------------------------------------------
+ * This is main responsive css file for theme. It is broken into following sections:
+ * 1. Global responsive styles
+ * 2. Blog responsive styles
+ * 3. Footer responsive styles
+ * 4. Header responsive styles
+ * 5. Search responsive styles
+ * 6. Title area responsive styles
+ * 7. Shortcodes responsive styles
+ * 8. Custom Post Types responsive styles
+-------------------------------------------------------------------*/
+
+/* ==========================================================================
+   1. Global responsive styles
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+@media only screen and (max-width: 1024px) {
+  body:not(.error404) .mkdf-content {
+    margin-top: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-hide-on-tablet {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .elementor-widget-wrap > .elementor-element.mkdf-row-grid-section,
+  .mkdf-grid,
+  .mkdf-container-inner,
+  .mkdf-row-grid-section {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .elementor-widget-wrap > .elementor-element.mkdf-row-grid-section,
+  .mkdf-grid,
+  .mkdf-container-inner,
+  .mkdf-row-grid-section {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .elementor-widget-wrap > .elementor-element.mkdf-row-grid-section,
+  .mkdf-grid,
+  .mkdf-container-inner,
+  .mkdf-row-grid-section {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .elementor-widget-wrap > .elementor-element.mkdf-row-grid-section,
+  .mkdf-grid,
+  .mkdf-container-inner,
+  .mkdf-row-grid-section {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .elementor-widget-wrap > .elementor-element.mkdf-row-grid-section,
+  .mkdf-grid,
+  .mkdf-container-inner,
+  .mkdf-row-grid-section {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .elementor-widget-wrap > .elementor-element.mkdf-row-grid-section,
+  .mkdf-grid,
+  .mkdf-container-inner,
+  .mkdf-row-grid-section {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-boxed .mkdf-wrapper .mkdf-wrapper-inner,
+  .mkdf-boxed .mkdf-wrapper .mkdf-footer-inner {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-boxed .mkdf-wrapper .mkdf-wrapper-inner,
+  .mkdf-boxed .mkdf-wrapper .mkdf-footer-inner {
+    width: 818px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-boxed .mkdf-wrapper .mkdf-wrapper-inner,
+  .mkdf-boxed .mkdf-wrapper .mkdf-footer-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-boxed .mkdf-wrapper .mkdf-wrapper-inner,
+  .mkdf-boxed .mkdf-wrapper .mkdf-footer-inner {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-boxed .mkdf-wrapper .mkdf-wrapper-inner,
+  .mkdf-boxed .mkdf-wrapper .mkdf-footer-inner {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mkdf-boxed .mkdf-wrapper .mkdf-wrapper-inner,
+  .mkdf-boxed .mkdf-wrapper .mkdf-footer-inner {
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  blockquote > * {
+    width: 100%;
+  }
+
+  blockquote:after {
+    content: normal;
+  }
+}
+
+/* ==========================================================================
+   Grid System responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  /*
+	* If you changed some value for space do the same thing in product-list-main-and-vc scss files
+	*/
+
+  .mkdf-huge-space .mkdf-outer-space {
+    margin: 0 -25px;
+  }
+
+  .mkdf-huge-space .mkdf-outer-space .mkdf-item-space {
+    padding: 0 25px;
+    margin: 0 0 50px;
+  }
+
+  .mkdf-huge-space.mkdf-disable-bottom-space {
+    margin-bottom: -50px;
+  }
+
+  .mkdf-huge-space.mkdf-columns-has-side-space {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .mkdf-grid-list.mkdf-six-columns .mkdf-masonry-grid-sizer {
+    width: 20%;
+  }
+
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space {
+    width: 20%;
+  }
+
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space.mkdf-masonry-size-large-width,
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space.mkdf-masonry-size-large-width-height {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1367px) {
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .mkdf-grid-list.mkdf-five-columns .mkdf-masonry-grid-sizer {
+    width: 25%;
+  }
+
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space {
+    width: 25%;
+  }
+
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space.mkdf-masonry-size-large-width,
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space.mkdf-masonry-size-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1025px) {
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .mkdf-grid-list.mkdf-six-columns .mkdf-masonry-grid-sizer {
+    width: 25%;
+  }
+
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space {
+    width: 25%;
+  }
+
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space.mkdf-masonry-size-large-width,
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space.mkdf-masonry-size-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1025px) {
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-grid-list.mkdf-four-columns .mkdf-masonry-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .mkdf-grid-list.mkdf-four-columns .mkdf-item-space {
+    width: 33.33333%;
+  }
+
+  .mkdf-grid-list.mkdf-four-columns .mkdf-item-space.mkdf-masonry-size-large-width,
+  .mkdf-grid-list.mkdf-four-columns .mkdf-item-space.mkdf-masonry-size-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkdf-grid-list.mkdf-four-columns .mkdf-item-space:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-grid-list.mkdf-five-columns .mkdf-masonry-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space {
+    width: 33.33333%;
+  }
+
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space.mkdf-masonry-size-large-width,
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space.mkdf-masonry-size-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-grid-list.mkdf-six-columns .mkdf-masonry-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space {
+    width: 33.33333%;
+  }
+
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space.mkdf-masonry-size-large-width,
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space.mkdf-masonry-size-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-grid-list.mkdf-three-columns .mkdf-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-grid-list.mkdf-three-columns .mkdf-item-space {
+    width: 50%;
+  }
+
+  .mkdf-grid-list.mkdf-three-columns .mkdf-item-space.mkdf-masonry-size-large-width,
+  .mkdf-grid-list.mkdf-three-columns .mkdf-item-space.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-grid-list.mkdf-three-columns .mkdf-item-space:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-grid-list.mkdf-four-columns .mkdf-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-grid-list.mkdf-four-columns .mkdf-item-space {
+    width: 50%;
+  }
+
+  .mkdf-grid-list.mkdf-four-columns .mkdf-item-space.mkdf-masonry-size-large-width,
+  .mkdf-grid-list.mkdf-four-columns .mkdf-item-space.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-grid-list.mkdf-four-columns .mkdf-item-space:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-grid-list.mkdf-five-columns .mkdf-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space {
+    width: 50%;
+  }
+
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space.mkdf-masonry-size-large-width,
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-grid-list.mkdf-six-columns .mkdf-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space {
+    width: 50%;
+  }
+
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space.mkdf-masonry-size-large-width,
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-grid-list.mkdf-two-columns .mkdf-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-grid-list.mkdf-two-columns .mkdf-item-space {
+    width: 100%;
+  }
+
+  .mkdf-grid-list.mkdf-three-columns .mkdf-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-grid-list.mkdf-three-columns .mkdf-item-space {
+    width: 100%;
+  }
+
+  .mkdf-grid-list.mkdf-four-columns .mkdf-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-grid-list.mkdf-four-columns .mkdf-item-space {
+    width: 100%;
+  }
+
+  .mkdf-grid-list.mkdf-five-columns .mkdf-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-grid-list.mkdf-five-columns .mkdf-item-space {
+    width: 100%;
+  }
+
+  .mkdf-grid-list.mkdf-six-columns .mkdf-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-grid-list.mkdf-six-columns .mkdf-item-space {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Grid System responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/modules-responsive.css.map */
+/* ==========================================================================
+   Blog responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+@media screen and (max-width: 680px) {
+  .mkdf-author-description-image {
+    display: none;
+  }
+
+  .mkdf-author-description-text-holder {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .mkdf-blog-single-navigation-text {
+    padding: 0;
+  }
+
+  .mkdf-comment-image {
+    display: none;
+  }
+
+  .mkdf-comment-holder .mkdf-comment-text {
+    width: 90%;
+    padding: 5%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .mkdf-blog-masonry.mkdf-grid-list.mkdf-three-columns .mkdf-item-space,
+  .mkdf-blog-masonry.mkdf-grid-list.mkdf-three-columns .mkdf-masonry-grid-sizer {
+    width: 50%;
+  }
+}
+
+/* ==========================================================================
+   Blog Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-blog-slider-holder.mkdf-bs-carousel-centered .active.center .mkdf-item-text-wrapper {
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   Blog Slider shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Blog responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=blog-map-responsive.css.map */
+/* ==========================================================================
+   Footer responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Footer responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-3 {
+    width: 50%;
+    float: left;
+  }
+
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-3:nth-child(2n+1) {
+    clear: both;
+  }
+
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-3:nth-child(3),
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-3:nth-child(4) {
+    margin-top: 30px;
+  }
+
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-4 {
+    width: 33.33333333333333%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-page-footer .mkdf-column-content:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+/* ==========================================================================
+   Footer responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Footer responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=footer-map-responsive.css.map */
+/* ==========================================================================
+   Header responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-page-header {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Fixed header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-boxed .mkdf-page-header .mkdf-fixed-wrapper.fixed {
+    width: 1000px;
+  }
+}
+
+/* ==========================================================================
+   Fixed header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Header Vertical responsive style - begin
+   ========================================================================== */
+
+@media only screen and (min-width: 1025px) {
+  .error404.mkdf-header-vertical .mkdf-content {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-header-vertical .mkdf-vertical-menu-area {
+    display: none;
+  }
+
+  .mkdf-header-vertical .mkdf-content,
+  .mkdf-header-vertical footer {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .mkdf-header-vertical .mkdf-grid,
+  .mkdf-header-vertical .mkdf-container-inner,
+  .mkdf-header-vertical .mkdf-row-grid-section {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-header-vertical .mkdf-grid,
+  .mkdf-header-vertical .mkdf-container-inner,
+  .mkdf-header-vertical .mkdf-row-grid-section {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-header-vertical .mkdf-grid,
+  .mkdf-header-vertical .mkdf-container-inner,
+  .mkdf-header-vertical .mkdf-row-grid-section {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-header-vertical .mkdf-grid,
+  .mkdf-header-vertical .mkdf-container-inner,
+  .mkdf-header-vertical .mkdf-row-grid-section {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-header-vertical .mkdf-grid,
+  .mkdf-header-vertical .mkdf-container-inner,
+  .mkdf-header-vertical .mkdf-row-grid-section {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-header-vertical .mkdf-grid,
+  .mkdf-header-vertical .mkdf-container-inner,
+  .mkdf-header-vertical .mkdf-row-grid-section {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mkdf-header-vertical .mkdf-grid,
+  .mkdf-header-vertical .mkdf-container-inner,
+  .mkdf-header-vertical .mkdf-row-grid-section {
+    width: 90%;
+  }
+}
+
+/* ==========================================================================
+   Header Vertical responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Mobile header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-mobile-header {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-paspartu-enabled .mkdf-mobile-header .mkdf-grid {
+    width: 90%;
+  }
+}
+
+/* ==========================================================================
+   Mobile header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Sticky header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-boxed .mkdf-page-header .mkdf-sticky-header {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-boxed.mkdf-sticky-up-mobile-header .mobile-header-appear .mkdf-mobile-header-inner {
+    width: 818px;
+    left: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-boxed.mkdf-sticky-up-mobile-header .mobile-header-appear .mkdf-mobile-header-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-boxed.mkdf-sticky-up-mobile-header .mobile-header-appear .mkdf-mobile-header-inner {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-boxed.mkdf-sticky-up-mobile-header .mobile-header-appear .mkdf-mobile-header-inner {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mkdf-boxed.mkdf-sticky-up-mobile-header .mobile-header-appear .mkdf-mobile-header-inner {
+    width: 92%;
+  }
+}
+
+/* ==========================================================================
+   Sticky header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Top header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-top-bar {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Top header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Header responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=header-map-responsive.css.map */
+/* ==========================================================================
+   Search responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+# Search template responsive style - begin
+========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-search-page-holder article .mkdf-post-image {
+    width: 80px;
+  }
+
+  .mkdf-search-page-holder article .mkdf-post-title-area {
+    padding: 0 0 0 105px;
+    min-height: 80px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-search-page-holder article .mkdf-post-image {
+    width: 60px;
+  }
+
+  .mkdf-search-page-holder article .mkdf-post-title-area {
+    padding: 0 0 0 80px;
+    min-height: 60px;
+  }
+}
+
+/* ==========================================================================
+# Search template responsive style - end
+========================================================================== */
+
+/* ==========================================================================
+# Fullscreen search responsive - start
+========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-fullscreen-with-sidebar-search-holder .mkdf-fullscreen-search-cell {
+    padding: 50px 0 0;
+  }
+
+  .mkdf-fullscreen-with-sidebar-search-holder .mkdf-fullscreen-sidebar {
+    margin: 20px 0 0;
+  }
+
+  .mkdf-fullscreen-with-sidebar-search-holder .mkdf-search-field {
+    font-size: 70px;
+  }
+
+  .mkdf-fullscreen-with-sidebar-search-holder .mkdf-search-submit {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-fullscreen-with-sidebar-search-holder .mkdf-form-holder-inner {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-fullscreen-with-sidebar-search-holder .mkdf-field-holder .mkdf-search-field {
+    font-size: 25px;
+  }
+
+  .mkdf-fullscreen-with-sidebar-search-holder .mkdf-search-submit {
+    font-size: 25px;
+    bottom: 25px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-fullscreen-with-sidebar-search-holder .mkdf-form-holder-inner {
+    width: 80%;
+  }
+}
+
+/* ==========================================================================
+# Fullscreen search responsive - end
+========================================================================== */
+
+/* ==========================================================================
+# Fullscreen search responsive - start
+========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-fullscreen-search-holder .mkdf-form-holder-inner {
+    width: 80%;
+  }
+}
+
+/* ==========================================================================
+# Fullscreen search responsive - end
+========================================================================== */
+
+/* ==========================================================================
+   Search responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=search-map-responsive.css.map */
+/* ==========================================================================
+   Subscribe Popup responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+# Subscribe Pop-up style responsive - begin
+========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-subscribe-popup-holder .mkdf-sp-inner {
+    width: 63%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-subscribe-popup-holder .mkdf-sp-inner {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-subscribe-popup-holder .mkdf-sp-inner {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-subscribe-popup-holder .mkdf-sp-inner {
+    min-height: 450px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-subscribe-popup-holder .mkdf-sp-content-container {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .mkdf-subscribe-popup-holder .mkdf-sp-background {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+# Subscribe Pop-up style responsive - end
+========================================================================== */
+
+/* ==========================================================================
+   Subscribe Popup responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=popup-map-responsive.css.map */
+/* ==========================================================================
+   Title responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Title responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-title-holder.mkdf-has-bg-image {
+    height: auto !important;
+    background-image: none !important;
+  }
+
+  .mkdf-title-holder.mkdf-has-bg-image .mkdf-title-image {
+    display: block;
+  }
+
+  .mkdf-title-holder.mkdf-has-bg-image .mkdf-title-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 100% !important;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .mkdf-title-holder.mkdf-title-va-header-bottom {
+    height: auto !important;
+  }
+
+  .mkdf-title-holder.mkdf-title-va-header-bottom .mkdf-title-wrapper {
+    padding-top: 0 !important;
+  }
+
+  .mkdf-title-holder .edgtf-page-title {
+    max-width: 100% !important;
+  }
+
+  .mkdf-title-holder .edgtf-page-subtitle {
+    max-width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-title-holder.mkdf-centered-type .mkdf-page-subtitle {
+    margin: 0;
+  }
+}
+
+/* ==========================================================================
+   Title responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Centered Title type responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-title-holder.mkdf-centered-type .mkdf-page-subtitle {
+    padding: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Centered Title type responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-title-holder.mkdf-standard-with-breadcrumbs-type .mkdf-title-info,
+  .mkdf-title-holder.mkdf-standard-with-breadcrumbs-type .mkdf-breadcrumbs-info {
+    display: block;
+    width: 100%;
+  }
+
+  .mkdf-title-holder.mkdf-standard-with-breadcrumbs-type .mkdf-breadcrumbs-info {
+    margin: 10px 0 0;
+    text-align: initial;
+    white-space: inherit;
+  }
+}
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Title responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=title-map-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio Single page responsive style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images {
+  /***** Columns Layout - end *****/
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images .mkdf-ps-image {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-info-holder {
+    margin: 30px 0 !important;
+    padding: 0;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single page responsive style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 1366px) {
+  .mkdf-testimonials-holder.mkdf-testimonials-boxed-text .mkdf-testimonial-text-holder {
+    padding: 40px 0 18px;
+  }
+
+  .mkdf-testimonials-holder.mkdf-testimonials-boxed-text .mkdf-testimonial-carousel-bottom {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .mkdf-testimonials-holder.mkdf-testimonials-boxed-text .mkdf-testimonial-carousel-bottom .mkdf-testimonial-image {
+    padding: 0 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-testimonials-holder.mkdf-testimonials-boxed-text .mkdf-testimonial-text-holder {
+    padding: 40px 40px 18px;
+  }
+
+  .mkdf-testimonials-holder.mkdf-testimonials-boxed-text .mkdf-testimonial-text-holder .mkdf-testimonial-title {
+    padding: 0 75px 0 0;
+  }
+
+  .mkdf-testimonials-holder.mkdf-testimonials-boxed-text .mkdf-testimonial-carousel-bottom {
+    padding: 0;
+  }
+
+  .mkdf-testimonials-holder.mkdf-testimonials-boxed-text .mkdf-testimonial-carousel-bottom .mkdf-testimonial-image {
+    padding: 0 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-testimonials-holder.mkdf-testimonials-boxed-text .mkdf-testimonial-text-holder .mkdf-testimonial-title {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-testimonials-holder.mkdf-testimonials-image-pagination .mkdf-testimonials-image-pagination-inner {
+    padding: 0 10px 0 30%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .mkdf-testimonials-holder.mkdf-testimonials-image-pagination .mkdf-testimonials-image-pagination-inner .mkdf-testimonial-text {
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/foton-core/assets/css/custom-post-types-map-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Button shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-btn.mkdf-btn-large,
+  .mkdf-btn.mkdf-btn-huge {
+    padding: 8px 28px;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  .mkdf-call-to-action-holder .mkdf-grid {
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-call-to-action-holder.mkdf-three-quarters-columns .mkdf-cta-text-holder,
+  .mkdf-call-to-action-holder.mkdf-four-fifths-columns .mkdf-cta-text-holder {
+    width: 66.66666666666667%;
+  }
+
+  .mkdf-call-to-action-holder.mkdf-three-quarters-columns .mkdf-cta-button-holder,
+  .mkdf-call-to-action-holder.mkdf-four-fifths-columns .mkdf-cta-button-holder {
+    width: 33.33333333333333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-call-to-action-holder.mkdf-normal-layout .mkdf-cta-inner,
+  .mkdf-call-to-action-holder.mkdf-normal-layout .mkdf-cta-text-holder,
+  .mkdf-call-to-action-holder.mkdf-normal-layout .mkdf-cta-button-holder {
+    display: block;
+  }
+
+  .mkdf-call-to-action-holder.mkdf-normal-layout .mkdf-cta-button-holder {
+    margin: 28px 0 0;
+    text-align: initial;
+  }
+
+  .mkdf-call-to-action-holder.mkdf-two-halves-columns .mkdf-cta-text-holder,
+  .mkdf-call-to-action-holder.mkdf-two-halves-columns .mkdf-cta-button-holder,
+  .mkdf-call-to-action-holder.mkdf-two-thirds-columns .mkdf-cta-text-holder,
+  .mkdf-call-to-action-holder.mkdf-two-thirds-columns .mkdf-cta-button-holder,
+  .mkdf-call-to-action-holder.mkdf-three-quarters-columns .mkdf-cta-text-holder,
+  .mkdf-call-to-action-holder.mkdf-three-quarters-columns .mkdf-cta-button-holder,
+  .mkdf-call-to-action-holder.mkdf-four-fifths-columns .mkdf-cta-text-holder,
+  .mkdf-call-to-action-holder.mkdf-four-fifths-columns .mkdf-cta-button-holder {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Cards Gallery shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .mkdf-cards-gallery .mkdf-cg-fake-card {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-left .mkdf-cg-card {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-left .mkdf-cg-card.mkdf-out {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-left .mkdf-cg-card:nth-last-child(6) {
+    -webkit-transform: scale(0.3) translateX(84%);
+    -ms-transform: scale(0.3) translateX(84%);
+    transform: scale(0.3) translateX(84%);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-left .mkdf-cg-card:nth-last-child(5) {
+    -webkit-transform: scale(0.4) translateX(60%);
+    -ms-transform: scale(0.4) translateX(60%);
+    transform: scale(0.4) translateX(60%);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-left .mkdf-cg-card:nth-last-child(4) {
+    -webkit-transform: scale(0.5) translateX(39%);
+    -ms-transform: scale(0.5) translateX(39%);
+    transform: scale(0.5) translateX(39%);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-left .mkdf-cg-card:nth-last-child(3) {
+    -webkit-transform: scale(0.6) translateX(25%);
+    -ms-transform: scale(0.6) translateX(25%);
+    transform: scale(0.6) translateX(25%);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-left .mkdf-cg-card:nth-last-child(2) {
+    -webkit-transform: scale(0.7) translateX(11.2%);
+    -ms-transform: scale(0.7) translateX(11.2%);
+    transform: scale(0.7) translateX(11.2%);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-right .mkdf-cg-card {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-right .mkdf-cg-card.mkdf-out {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-right .mkdf-cg-card:nth-last-child(6) {
+    -webkit-transform: scale(0.3) translateX(-84%);
+    -ms-transform: scale(0.3) translateX(-84%);
+    transform: scale(0.3) translateX(-84%);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-right .mkdf-cg-card:nth-last-child(5) {
+    -webkit-transform: scale(0.4) translateX(-60%);
+    -ms-transform: scale(0.4) translateX(-60%);
+    transform: scale(0.4) translateX(-60%);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-right .mkdf-cg-card:nth-last-child(4) {
+    -webkit-transform: scale(0.5) translateX(-39%);
+    -ms-transform: scale(0.5) translateX(-39%);
+    transform: scale(0.5) translateX(-39%);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-right .mkdf-cg-card:nth-last-child(3) {
+    -webkit-transform: scale(0.6) translateX(-25%);
+    -ms-transform: scale(0.6) translateX(-25%);
+    transform: scale(0.6) translateX(-25%);
+  }
+
+  .mkdf-cards-gallery.mkdf-cg-shuffled-right .mkdf-cg-card:nth-last-child(2) {
+    -webkit-transform: scale(0.7) translateX(-11.2%);
+    -ms-transform: scale(0.7) translateX(-11.2%);
+    transform: scale(0.7) translateX(-11.2%);
+  }
+}
+
+/* ==========================================================================
+   Cards Gallery shortcode responsive style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-comparision-pricing-table-holder .mkdf-cpt-table .mkdf-cpt-table-content li {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-comparision-pricing-table-holder.mkdf-three-columns .mkdf-cpt-features-holder {
+    display: none;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-three-columns .mkdf-cpt-table {
+    width: 100%;
+    float: none;
+    margin-bottom: -1px;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-three-columns .mkdf-cpt-table .mkdf-cpt-table-head-holder,
+  .mkdf-comparision-pricing-table-holder.mkdf-three-columns .mkdf-cpt-table .mkdf-cpt-table-content {
+    border-left: 1px solid #e1e5fa !important;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-three-columns .mkdf-cpt-table-item-feature {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-three-columns .mkdf-cpt-footer-holder {
+    height: auto;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-three-columns .mkdf-cpt-footer-holder .mkdf-cpt-image-holder {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-three-columns .mkdf-cpt-footer-holder .mkdf-cpt-text-holder {
+    width: 100%;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-two-columns .mkdf-cpt-table {
+    margin-bottom: -1px;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-two-columns .mkdf-cpt-footer-holder {
+    height: auto;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-two-columns .mkdf-cpt-footer-holder .mkdf-cpt-image-holder {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-two-columns .mkdf-cpt-footer-holder .mkdf-cpt-text-holder {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-comparision-pricing-table-holder.mkdf-two-columns .mkdf-cpt-table {
+    width: 100%;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-two-columns .mkdf-cpt-features-holder {
+    display: none;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-two-columns .mkdf-cpt-table-item-feature {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .mkdf-comparision-pricing-table-holder.mkdf-two-columns .mkdf-cpt-table-head-holder,
+  .mkdf-comparision-pricing-table-holder.mkdf-two-columns .mkdf-cpt-table-content {
+    border-left: 1px solid #e1e5fa !important;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-countdown .countdown-row.countdown-show4 .countdown-section,
+  .mkdf-countdown .countdown-row.countdown-show5 .countdown-section,
+  .mkdf-countdown .countdown-row.countdown-show6 .countdown-section {
+    width: 33.33333333333333%;
+  }
+
+  .mkdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 40px;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .mkdf-custom-font-holder.mkdf-disable-title-break br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1366px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+
+  .mkdf-elements-holder .mkdf-eh-item-content {
+    padding: 0 10px;
+  }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Google Map shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-google-map-overlay {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Horizontal Layer Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .swiper-container.mkdf-horizontal-layer-slider.full-page .swiper-wrapper .swiper-slide .mkdf-slide-parallax-image-holder {
+    left: 30%;
+    -webkit-transform: translate(-20%, -50%);
+    -ms-transform: translate(-20%, -50%);
+    transform: translate(-20%, -50%);
+  }
+
+  .swiper-container.mkdf-horizontal-layer-slider.full-page .swiper-navigation .mkdf-swiper-button-prev {
+    left: 20px;
+  }
+
+  .swiper-container.mkdf-horizontal-layer-slider.full-page .swiper-navigation .mkdf-swiper-button-next {
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .swiper-container.mkdf-horizontal-layer-slider.full-page .swiper-navigation .mkdf-swiper-button-prev,
+  .swiper-container.mkdf-horizontal-layer-slider.full-page .swiper-navigation .mkdf-swiper-button-next {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Horizontal Layer Slider shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Item Showcase shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-item-showcase-holder .mkdf-is-image {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    margin-top: 0 !important;
+  }
+
+  .mkdf-item-showcase-holder .mkdf-is-image img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .mkdf-item-showcase-holder .mkdf-is-item-holder.mkdf-is-left-holder,
+  .mkdf-item-showcase-holder .mkdf-is-item-holder.mkdf-is-right-holder {
+    float: right;
+    width: 50%;
+    padding: 0 0 0 50%;
+  }
+
+  .mkdf-item-showcase-holder .mkdf-is-item-holder.mkdf-is-right-holder {
+    margin: 36px 0 0;
+  }
+
+  .mkdf-item-showcase-holder .mkdf-is-item {
+    margin: 36px 0 0;
+  }
+
+  .mkdf-item-showcase-holder .mkdf-is-item.mkdf-is-left {
+    text-align: left;
+  }
+
+  .mkdf-item-showcase-holder .mkdf-is-item.mkdf-is-left .mkdf-is-content {
+    padding: 0 0 0 20px;
+  }
+
+  .mkdf-item-showcase-holder .mkdf-is-item:not(.mkdf-appeared) {
+    -webkit-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    transform: translateX(-40px);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-item-showcase-holder .mkdf-is-image {
+    display: none;
+  }
+
+  .mkdf-item-showcase-holder .mkdf-is-item-holder.mkdf-is-left-holder,
+  .mkdf-item-showcase-holder .mkdf-is-item-holder.mkdf-is-right-holder {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .mkdf-item-showcase-holder .mkdf-is-item {
+    opacity: 1;
+    -webkit-transform: translateX(0) translateY(0) !important;
+    -ms-transform: translateX(0) translateY(0) !important;
+    transform: translateX(0) translateY(0) !important;
+  }
+}
+
+/* ==========================================================================
+   Item Showcase shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1366px) {
+  .mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-prices {
+    max-width: 130px;
+  }
+
+  .mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-prices .mkdf-pt-mark {
+    margin: 13px 0 0 7px;
+  }
+
+  .mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-content-holder {
+    padding: 74px 15px 0 130px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-prices {
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+  .mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-prices .mkdf-pt-mark {
+    margin: 9px 0 0;
+  }
+
+  .mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-content-holder {
+    padding: 26px 15px 0 15px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-price-table {
+    width: 100% !important;
+  }
+
+  .mkdf-price-table:nth-child(2n+1) {
+    clear: none !important;
+  }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Process shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1366px) {
+  .mkdf-process-holder.mkdf-responsive-1366 .mkdf-mark-horizontal-holder {
+    display: none;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-1366 .mkdf-mark-vertical-holder {
+    display: block;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-1366 .mkdf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-1366 .mkdf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-process-holder.mkdf-responsive-1024 .mkdf-mark-horizontal-holder {
+    display: none;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-1024 .mkdf-mark-vertical-holder {
+    display: block;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-1024 .mkdf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-1024 .mkdf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-process-holder.mkdf-responsive-768 .mkdf-mark-horizontal-holder {
+    display: none;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-768 .mkdf-mark-vertical-holder {
+    display: block;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-768 .mkdf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-768 .mkdf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-process-holder.mkdf-responsive-680 .mkdf-mark-horizontal-holder {
+    display: none;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-680 .mkdf-mark-vertical-holder {
+    display: block;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-680 .mkdf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-680 .mkdf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-process-holder.mkdf-responsive-480 .mkdf-mark-horizontal-holder {
+    display: none;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-480 .mkdf-mark-vertical-holder {
+    display: block;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-480 .mkdf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .mkdf-process-holder.mkdf-responsive-480 .mkdf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+/* ==========================================================================
+   Process shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-section-title-holder.mkdf-st-two-columns {
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-section-title-holder.mkdf-st-two-columns .mkdf-st-title,
+  .mkdf-section-title-holder.mkdf-st-two-columns .mkdf-st-text {
+    width: 100%;
+    float: none !important;
+    text-align: initial !important;
+  }
+
+  .mkdf-section-title-holder.mkdf-st-two-columns .mkdf-st-text {
+    margin: 14px 0 0;
+  }
+
+  .mkdf-section-title-holder.mkdf-st-disable-title-break .mkdf-st-title br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li a {
+    padding: 7px 21px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li {
+    margin: 0 8px 0 0;
+  }
+
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li a {
+    padding: 7px 18px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+    margin: 0 26px 0 0;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav {
+    width: 180px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tab-container {
+    width: calc(100% - 180px);
+    padding: 0 0 0 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+  }
+
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li a {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li:first-child a {
+    border-radius: 20px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li:last-child a {
+    border-radius: 20px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 8px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li a {
+    width: 100%;
+  }
+
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+    margin: 0 20px 0 0;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav,
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tab-container {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav {
+    border-right: 0;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li {
+    float: left;
+    margin: 0 20px 0 0;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tab-container {
+    padding: 31px 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav {
+    padding: 0 0 20px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Triple Frame Image Highlight shortcode responsive styles - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-triple-frame-image-highlight .mkdf-tfih-top-bar-left {
+    width: 5vw;
+  }
+
+  .mkdf-triple-frame-image-highlight .mkdf-tfih-top-bar-left > span {
+    height: 0.5vw;
+    width: 0.5vw;
+    border-radius: 0.5vw;
+  }
+
+  .mkdf-triple-frame-image-highlight .mkdf-tfih-top-bar-right {
+    width: 2vw;
+  }
+
+  .mkdf-triple-frame-image-highlight .mkdf-tfih-top-bar-right > span {
+    height: 2px;
+    width: 2px;
+    border-radius: 2px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-triple-frame-image-highlight .mkdf-tfih-top-bar-right {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Triple Frame Image Highlight shortcode responsivestyles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  body.mkdf-vss-initialized {
+    overflow-y: visible !important;
+    height: auto !important;
+  }
+
+  .mkdf-vertical-split-slider,
+  #multiscroll-nav {
+    display: none;
+  }
+
+  .mkdf-vss-responsive {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/foton-core/assets/css/shortcodes-map-responsive.css.map */
